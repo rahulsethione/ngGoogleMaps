@@ -1,6 +1,6 @@
-angular.module('SimpleGoogleMaps', []);
+angular.module('ngGoogleMaps', []);
 (function(module) {
-	module.directive('simpleGoogleMap', function() {
+	module.directive('ngGoogleMap', function() {
 		return {
 			restrict: 'E',
 			replace: true,
@@ -169,4 +169,4 @@ angular.module('SimpleGoogleMaps', []);
 			}
 		}
 	});
-})(angular.module('SimpleGoogleMaps'));
+})(angular.module('ngGoogleMaps'));

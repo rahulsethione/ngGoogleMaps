@@ -1,1 +1,1 @@
-angular.module('SimpleGoogleMaps', []);
+angular.module('ngGoogleMaps', []);

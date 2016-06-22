@@ -2,8 +2,9 @@
 <html ng-app="GoogleMapApp">
 	<head>
 		<script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
-		<!--<script type="text/javascript" src="./src/module.js"></script>
-		<script type="text/javascript" src="./src/directive/SimpleGoogleMap.js"></script>-->
+		<!--Debugging-->
+		<!--<script type="text/javascript" src="./src/module.js"></script>-->
+		<!--<script type="text/javascript" src="./src/directive/ngGoogleMap.js"></script>-->
 		<script type="text/javascript" src="./dist/ng-google-maps.min.js"></script>
 		<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXQLIsX2ybDBkM_FDm-AQp-3aU3eCjU-g"></script>
 		<style type="text/css">
@@ -16,10 +17,10 @@
 		</style>
 	</head>
 	<body ng-controller="MapController">
-		<simple-google-map id="map" class="google-map" options="map.options" markers="map.markers" route="trackedRoute"></simple-google-map>
+		<ng-google-map id="map" class="google-map" options="map.options" markers="map.markers" route="trackedRoute"></simple-google-map>
 	</body>
 	<script type="text/javascript">
-		angular.module('GoogleMapApp', ['SimpleGoogleMaps']).controller('MapController', ['$scope', function($scope) {
+		angular.module('GoogleMapApp', ['ngGoogleMaps']).controller('MapController', ['$scope', function($scope) {
 		
 			$scope.map = {
 				options: {
