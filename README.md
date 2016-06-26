@@ -50,7 +50,7 @@ Attribute     | Description | Required
 ***info***     | *InfoWindow* tooltip options | Optional
 ***resize***   | *Boolean* for resizing map on any event | Optional
 #### Examples
-1. **Options**
+* **Options**
 
 You can pass the options from from your controller as following:
 ```javascript
@@ -66,7 +66,8 @@ angular.module('myApp', ['ngGoogleMaps'])
 ```html
 <ng-google-maps id="maps" options="mapOptions"></ng-google-maps>
 ```
-2. **Markers**
+
+* **Markers**
 
 Pass an array of marker objects from your controller as shown below:
 ```javascript
@@ -102,7 +103,7 @@ $scope.mapMarkers = [{
 	}
 }];
 ```
-3. **Route**
+* **Route**
 
 The *route* attribute allows you to display dirctions and waypoints in road map between two distinct locatiions. You can pass this information from your controller as shown below:
 ```javascript
@@ -123,7 +124,7 @@ angular.module('myApp', ['ngGoogleMaps'])
 ```
 ***Note***: The *route* array must contain at least two locations, i.e., source and destination and any number of waypoint locations in between.
 
-4. **InfoWindow**
+* **InfoWindow**
 
 The *info* attribute enables you to display InfoWindow toooltip in the map at a desired event. You can pass the InfoWindow object from your controller as shown below:
 ```javascript
@@ -171,7 +172,7 @@ angular.module('myApp', ['ngGoogleMaps'])
 <ng-google-maps id="maps" markers="mapMarkers" info="infoWindowOptions"></ng-google-maps>
 ```
 
-5. **Map resize**
+* **Map resize**
 
 The map resizes to fit into a resized container or *div* dynamically when the value of *resize* attribute is set to *true*.
 
