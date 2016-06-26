@@ -122,6 +122,7 @@ angular.module('myApp', ['ngGoogleMaps'])
 <ng-google-maps id="maps" route="mapRoute"></ng-google-maps>
 ```
 ***Note***: The *route* array must contain at least two locations, i.e., source and destination and any number of waypoint locations in between.
+
 4. **InfoWindow**
 
 The *info* attribute enables you to display InfoWindow toooltip in the map at a desired event. You can pass the InfoWindow object from your controller as shown below:
@@ -169,9 +170,11 @@ angular.module('myApp', ['ngGoogleMaps'])
 ```html
 <ng-google-maps id="maps" markers="mapMarkers" info="infoWindowOptions"></ng-google-maps>
 ```
+
 5. **Map resize**
 
 The map resizes to fit into a resized container or *div* dynamically when the value of *resize* attribute is set to *true*.
+
 ```html
 <ng-google-maps id="maps" resize="true"></ng-google-maps>
 ```
