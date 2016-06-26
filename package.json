@@ -1,5 +1,5 @@
 {
-  "name": "ng-google-maps",
+  "name": "ngGoogleMaps",
   "version": "1.0.0",
   "description": "A simple Angular Directive for Google Maps API",
   "main": "index.js",
