@@ -20,7 +20,7 @@ $ bower install ng-simple-google-maps --save
 Include the module's script file in your HTML page
 ```html
 <script defer src="https://maps.googleapis.com/maps/api/js?key=[YOUR_GOOGLE_MAPS_API_KEY]"></script>
-<script src="bower_components/ngGoogleMaps/dist/ng-google-maps.min.js"></script>
+<script src="bower_components/ng-simple-google-maps/dist/ng-google-maps.min.js"></script>
 ```
 Inject the module as a dependency into your main Angular module as below:
 ```javascript
