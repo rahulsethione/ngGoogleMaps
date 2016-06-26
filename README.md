@@ -10,11 +10,11 @@ Simplest Angular directive for Google Maps offering following features:
 ## Installation
 #### Via npm
 ```sh
-$ npm install ng-google-maps --save
+$ npm install ng-simple-google-maps --save
 ```
 #### Via bower
 ```sh
-$ bower install ng-google-maps --save
+$ bower install ng-simple-google-maps --save
 ```
 #### Getting started
 Include the module's script file in your HTML page
