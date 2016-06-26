@@ -29,10 +29,14 @@
 				function addMarker(marker) {
 					return new google.maps.Marker({
 						position: marker.position,
-    					title: marker.title,
+    					title: marker.title ? marker.title : '',
     					animation: google.maps.Animation.DROP,
     					icon: marker.icon ? marker.icon : attrs.markerIcon ? attrs.markerIcon : ''
 					});
+				}
+				
+				function addGenericMarker(marker) {
+					return new google.maps.Marker(marker);
 				}
 
 				function renderMarkers(markers) {
@@ -150,11 +154,14 @@
 					if(newValue) {
 						if(_infoWindow) _infoWindow.close();
 						_infoWindow = new google.maps.InfoWindow(newValue);
-						if(newValue.index) {
+						if(newValue.index && _markers.length > 0) {
 							_infoWindow.open(_map, _markers[newValue.index]);
 						}
+						else if(newValue.marker) {
+							_infoWindow.open(_map, addGenericMarker(marker));
+						}
 						else {
-							_infoWindow.open(_map, _markers[0]);
+							_infoWindow.open(_map);
 						}
 					}
 				});
